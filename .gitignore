@@ -1,0 +1,51 @@
+# ==================================
+# Terraform
+# ==================================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfstate.backup
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files may contain secrets
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# ==================================
+# SSH private keys and certificates
+# ==================================
+*.pem
+*.key
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*_private_key
+*.p12
+*.pfx
+
+# ==================================
+# AWS credentials and secrets
+# ==================================
+.aws/
+.env
+.env.*
+!.env.example
+credentials
+secrets.yml
+secrets.yaml
+vault-password-file
+
+# ==================================
+# Ansible
+# ==================================
+*.retry
+vault_pass
